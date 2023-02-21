@@ -9,7 +9,7 @@
         padding: 0 30px;
     }
 
-    .navbar {
+    .navbar-list {
         display: none;
     }
 
@@ -50,7 +50,12 @@
     }
 
     .menu {
-        padding: 0 10px;
+        padding: 40px 10px;
+    }
+    .menu-title {
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
     }
     .menu-products {
         flex-direction: column;
