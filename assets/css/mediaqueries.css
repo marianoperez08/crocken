@@ -56,8 +56,25 @@
         flex-direction: column;
     }
 
+    .product-info {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
     .product {
         width: 100%;
+    }
+
+    .product h2 {
+        font-size: 16px;
+    }
+
+    .product p {
+        font-size: 10px;
+    }
+    
+    .product span {
+        font-size: 18px;
     }
     
 }   
