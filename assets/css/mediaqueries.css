@@ -9,7 +9,7 @@
         padding: 0 30px;
     }
 
-    .navbar-list {
+    .navbar {
         display: none;
     }
 
@@ -45,5 +45,19 @@
         width: 30%;
     }
 
-    .menu
-}
+    .categories, .maps {
+        display: none;
+    }
+
+    .menu {
+        padding: 0 10px;
+    }
+    .menu-products {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+    
+}   
