@@ -1,0 +1,49 @@
+/* Celu */
+@media (max-width: 992px) {
+    
+}
+
+
+@media (max-width: 576px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .about  {
+        flex-direction: column-reverse;
+        padding: 40px 0 0 0;
+        gap: 40px;
+    }
+
+    .about-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-info h2 {
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .about-info img {
+        width: 30%;
+    }
+
+    .menu
+}
