@@ -74,11 +74,13 @@ h1 {
     font-size: 50px;
     line-height: 50px;
 }
+
 h2 {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
 }
+
 h3 {
     font-weight: 700;
     font-size: 20px;
@@ -87,7 +89,23 @@ h3 {
 
 p {
     font-weight: 300;
+    font-size: 14px;
 }
+
+.button {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.button:hover {
+    background-color: var(--yellow);
+    color: var(--blue-dark);
+}
+
 h4 {
     font-weight: 500;
 }
@@ -297,7 +315,6 @@ main {
     width: 45%;
     display: flex;
     justify-content: center;
-    gap: 20px;
     background-color: var(--pink);
     padding: 10px;
     border-radius: 15px;
@@ -318,10 +335,25 @@ main {
 .product-info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px 0;
-    padding-right: 10px;
+    justify-content: space-between;
+    padding: 20px;
     width: 50%;
+}
+
+.product-info-title, .product-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-descrption{
+    color: var(--blue-dark);
+}
+
+.product-new {
+    color: var(--red);
+    display: flex;
+    justify-content: start;
 }
 
 .product-info h2{
@@ -330,10 +362,10 @@ main {
     color: var(--blue-dark);
 }
 
-.product-info p{
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--blue-dark);
+.product-price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .product-info span{
@@ -342,13 +374,51 @@ main {
     color: var(--orange);
 }
 
-.product-info a{
-    background-color: var(--blue-dark);
-    color: var(--pink);
-    border-radius: 15px;
-    text-align: center;
+
+.benefits {
+    display: flex;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.benefits-img {
     width: 50%;
+}
+
+.benefits-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.benefits-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 40px;
+}
+
+.benefits-info ul {
+    padding: 0 30px;
+
+}
+
+.benefits-info ul li {
+    list-style-type: circle;
     font-weight: 300;
+    color: var(--blue);
+}
+
+.benefits-info h2 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.benefits-info p {
+    color: var(--blue-dark);
 }
 
 .ubication {
@@ -362,6 +432,15 @@ main {
     padding: 60px 10%;
     gap: 40px;
 }
+.ubication-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ubication-title i {
+    font-size: 40px;
+}
 
 .ubication h2 {
     color: var(--white);
@@ -369,7 +448,8 @@ main {
 }
 .ubication-info {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
@@ -393,7 +473,7 @@ main {
 
 .maps-container {
     background-color: var(--orange);
-    width: 100%;
+    width: 50%;
 }
 
 .maps {

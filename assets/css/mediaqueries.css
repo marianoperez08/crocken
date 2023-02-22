@@ -71,7 +71,7 @@
 
     .product-info {
         gap: 10px;
-        padding: 10px 0;
+        padding: 15px;
     }
 
     .product {
@@ -85,14 +85,29 @@
     }
 
     .product p {
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 12px;
+        line-height: 12px;
 
     }
     
     .product span {
-        font-size: 18px;
+        font-size: 25px;
     }
+
+    .benefits {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .benefits-img, .benefits-info {
+        width: 100%;
+    }
+
+    .benefits-info {
+        padding: 30px;
+    }
+
+
 
     .ubication-info {
         flex-direction: column;
