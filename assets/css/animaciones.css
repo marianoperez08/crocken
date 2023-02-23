@@ -117,7 +117,7 @@
   }
   
   /* Animacion al h1 */
-  .hero-info h1, .hero img, .hero {
+  .hero-info h1, .hero img, .navbar-icons {
     /*animacion - duración - animation-function*/
     animation: fade 1s ease-in, slide-right 1.3s ease-in-out;
   }
