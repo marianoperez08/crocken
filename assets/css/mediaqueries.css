@@ -1,4 +1,13 @@
-/* Celu */
+:root {
+    --red: #eb2c0b;
+    --white: #fafafa;
+    --pink: #f9c6c0;
+    --blue: #0a2e4a;
+    --blue-dark: #001529;
+    --yellow: #ff9e18;
+    --orange: #ff4713;
+}
+
 @media (max-width: 992px) {
     
 }
@@ -12,13 +21,39 @@
     .header-menu {
         gap: 30px;
     }
-    .menu-hamburguer {
+    .menu-label {
         display: flex;
         font-size: 25px;
     }
 
-    .navbar-list {
+    .navbar {
+        gap: 30px;
+      }
+    
+      .navbar-list {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 80%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--blue-dark);
+        border: 2px solid var(--blue-dark);
+        border-top: 0px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
         display: none;
+        height: 100vh
+      }
+    
+      .navbar-list a {
+        font-size: 18px;
+      }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
     }
 
     .hero {
