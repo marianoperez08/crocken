@@ -423,6 +423,24 @@ main {
     color: var(--blue-dark);
 }
 
+.benefits-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.benefits-buttons a {
+    width: 100%;
+}
+
+.benefits-buttons a:first-child {
+    background-color: var(--blue);
+}
+
+.benefits-buttons a:hover:first-child {
+    background-color: var(--yellow);
+}
+
+
 .ubication {
     display: flex;
     flex-direction: column;

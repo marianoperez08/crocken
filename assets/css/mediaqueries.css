@@ -140,6 +140,11 @@
         padding: 30px;
     }
 
+    .benefits-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
     .maps-container {
     width: 100%;
     }
