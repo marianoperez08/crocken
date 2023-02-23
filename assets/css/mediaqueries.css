@@ -142,8 +142,9 @@
         padding: 30px;
     }
 
-
-
+    .maps-container {
+    width: 100%;
+    }
     .ubication-info {
         flex-direction: column;
     }
