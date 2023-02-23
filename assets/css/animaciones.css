@@ -67,7 +67,7 @@ html {
 
 /* animación en hover */
 
-.cart-icon, .user-icon, .menu-icon{
+.cart-icon, .user-icon, .menu-icon, .logo{
     transition: all 400ms ease-out;
 }
 
