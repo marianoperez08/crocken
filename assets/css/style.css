@@ -117,6 +117,7 @@ h6 {
 }
 
 
+
 /* Header */
 
 header {
@@ -227,7 +228,7 @@ main {
 .about {
     display: flex;
     color: var(--blue-dark);
-    background-color: var(--pink);
+    background-color: var(--white);
 }
 
 .about img {
@@ -315,7 +316,8 @@ main {
     width: 45%;
     display: flex;
     justify-content: center;
-    background-color: var(--pink);
+    background-color: var(--white);
+    color: var(--blue-dark);
     padding: 10px;
     border-radius: 15px;
 }
@@ -490,15 +492,30 @@ footer {
     width: 100%;
     background-color: var(--orange);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 20px 0;
-    color: var(--pink)
+    padding: 20px 40px;
+    color: var(--pink);
+    gap: 5px;
+    bottom: 0;
+}
+
+footer img {
+    width: 10%;
 }
 
 .navfooter {
     display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
     gap: 30px;
+}
+
+.footer-right {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .footer-icons {
@@ -506,12 +523,11 @@ footer {
     gap: 10px;
     align-items: center;
     font-size: 20px;
-    width: 100%;
 }
 
-footer img {
-    width: 20%;
-}
+
+
+
 
 
 
@@ -533,10 +549,19 @@ footer img {
 
 .options {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
 
+form {
+}
+
+
 .options a{
     color: var(--blue-dark);
+}
+
+.options p {
+    text-decoration: underline;
 }
