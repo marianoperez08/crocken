@@ -147,10 +147,10 @@ html {
 
 @keyframes slide-right {
     from {
-        transform: translateX(100px);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(0);
+        transform: translateX(-100px);
     }
 }
 
@@ -169,7 +169,7 @@ html {
 
 #hero, #about{
     /* animacion - duración - animation-function */
-    animation: fade 1s ease-in, slide-down 1.3s ease-in-out;
+    animation: fade 1.3s ease-in, slide-down 1.3s ease-in-out;
 }
 
 
