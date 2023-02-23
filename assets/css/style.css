@@ -228,7 +228,7 @@ main {
 .about {
     display: flex;
     color: var(--blue-dark);
-    background-color: var(--white);
+    background-color: var(--or);
 }
 
 .about img {

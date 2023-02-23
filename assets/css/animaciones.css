@@ -75,7 +75,7 @@
   
   /* Animacion fade */
   /*Funcionamiento: pasa de opacidad 0 a opacidad 1*/
-  @keyframes fade {
+  @keyframes fade-0 {
     from {
       opacity: 0;
     }
@@ -107,9 +107,9 @@
   /* Animacion slide derecha */
   /*Funcionamiento: Hacemos llegar al elemento animado desde la derecha*/
   
-  @keyframes slide-right {
+  @keyframes fade {
     from {
-      transform: translateX(100px);
+      transform: translateX(0);
     }
     to {
       transform: translateX(0);
@@ -117,9 +117,9 @@
   }
   
   /* Animacion al h1 */
-  .hero-info h1, .hero img, .navbar-icons {
+  .hero-info h1, .hero img {
     /*animacion - duración - animation-function*/
-    animation: fade 1s ease-in, slide-right 1.3s ease-in-out;
+    animation: fade 1s ease-in, fade-0 1.3s ease-in-out;
   }
   
   .about img, .about-info {
