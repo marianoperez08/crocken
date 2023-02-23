@@ -15,7 +15,7 @@
 
 @media (max-width: 576px) {
     header {
-        padding: 0 30px;
+        padding: 0 25px;
     }
 
     .header-menu {
@@ -53,6 +53,7 @@
 
     #hero {
         flex-direction: column;
+        padding: 40px 30px;
     }
 
     #hero img {
@@ -90,10 +91,12 @@
     #menu {
         padding: 40px 10px;
     }
-    .menu-title {
+
+
+    .menu-title h2 {
         text-align: center;
-        line-height: 25px;
-        font-size: 20px;
+        line-height: 30px;
+        font-size: 30px;
     }
     .menu-products {
         flex-direction: column;
@@ -124,6 +127,9 @@
         font-size: 25px;
     }
 
+    .product-info-details .button{
+        padding: 5px 0;
+    }
     #benefits {
         flex-direction: column;
         width: 100%;
@@ -145,8 +151,33 @@
     .maps-container {
     width: 100%;
     }
-    .ubication-info {
+
+    #ubication {
+        padding: 60px 30px;
+    }
+
+    .ubication-title {
         flex-direction: column;
+        justify-content: center;
+    }
+    .ubication-title h2 {
+        text-align: center;
+    }
+
+    .ubication-info{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ubication-info h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .ubication-text{
+        width: 100%;
+        padding: 0;
     }
     
     footer {
