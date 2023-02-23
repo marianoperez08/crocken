@@ -1,0 +1,221 @@
+:root {
+    --red: #eb2c0b;
+    --white: #fafafa;
+    --pink: #f9c6c0;
+    --blue: #0a2e4a;
+    --blue-dark: #001529;
+    --yellow: #ff9e18;
+    --orange: #ff4713;
+}
+
+/* Trabajar nuestras animaciones */
+
+/* Agregamos el scroll behavior smooth para que sea más suave la navegación */
+
+/* scroll padding top para cuando se clickea en el link tome en cuenta
+la altura del navbar y no nos tape parte de la sección. */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* efecto desenfoque al hacer clic en el menu hamburguesa */
+
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    /* efecto Glassmorphismo */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+}
+
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+/* Hover de los elementos "a" del navbar */
+
+.navbar-list li {
+    position: relative;
+    padding: 4px;
+}
+
+.navbar-list li a::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: var(--pink);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/* animación en hover */
+
+.cart-icon, .user-icon, .menu-icon{
+    transition: all 400ms ease-out;
+}
+
+.cart-icon:hover, .user-icon:hover, .menu-icon:hover{
+    color: var(--pink);
+    transition: all 400ms ease-in;
+    border-color: var(--pink);
+}
+
+/*  botones del carrito */
+
+.quantity-handler {
+    transition: all .2s ease-in;
+}
+
+.quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--electric);
+    transition: all .2s ease-in;
+}
+
+/* botón comprar y add */
+
+.btn-add, 
+.hero-info a {
+    transition: all 400ms ease-out;
+}
+
+.btn-add:hover, 
+.hero-info a:hover {
+    background-color: var(--fire);
+    transition: all 400ms ease-in;
+}
+
+.btn-load {
+    transition: all .2s ease-out;
+    font-weight: 600;
+}
+
+.btn-load:hover {
+    background-color: var(--electric);
+    color: var(--text-white);
+    transition: all .2s ease-in;
+}
+
+/* Animaciones de entrada a los elementos del hero y las sección 2 */
+
+/* Animación fade */
+/* pasa de opacidad 0 a opacidad 1 */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* aplico las animaciones creadas a mis elementos */
+
+
+
+#hero, #about{
+    /* animacion - duración - animation-function */
+    animation: fade 1s ease-in, slide-down 1.3s ease-in-out;
+}
+
+
+.hero-card {
+    opacity: 0;
+    /* animacion - duración - animation-function */
+    /* le agrego un fordwards (para que el elemento quede fijo al final */
+    animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.hero h2 {
+    opacity: 0;
+    /* animacion - duración - animation-function */
+    /* le agrego un fordwards (para que el elemento quede fijo al final */
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.info-card {
+    opacity: 0;
+    /* animacion - duración - animation-function */
+    /* le agrego un fordwards (para que el elemento quede fijo al final */
+    animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+    animation-delay: 0.8s;
+}
+
+/* aplicamos delay diferente para las tarjetas */
+
+.info-card:nth-child(1) {
+    animation-delay: 0.8s;
+}
+.info-card:nth-child(2) {
+    animation-delay: 0.7s;
+}
+.info-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* animación para las img de las cards */
+/* DEJAR */
+.product img {
+    transition: all 0.3s linear;
+}
+
+.product img:hover {
+    transform: scale(1.02);
+    transition: all 0.3s linear;
+}

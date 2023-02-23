@@ -44,6 +44,7 @@
         z-index: 2;
         display: none;
         height: 100vh;
+        animation: none, slide-left 0.5s ease-in-out;
 }
     
       .navbar-list a {
@@ -54,15 +55,15 @@
         display: flex;
     }
 
-    .hero {
+    #hero {
         flex-direction: column;
     }
 
-    .hero img {
+    #hero img {
         width: 100%;
     }
 
-    .about  {
+    #about  {
         flex-direction: column-reverse;
         padding: 40px 0 0 0;
         gap: 40px;
@@ -78,11 +79,11 @@
         font-size: 40px;
     }
 
-    .about img {
+    .about-img {
         width: 100%;
     }
 
-    .about-info img {
+    .about-info-sticker {
         width: 30%;
     }
 
@@ -90,7 +91,7 @@
        display: none ;
     }
 
-    .menu {
+    #menu {
         padding: 40px 10px;
     }
     .menu-title {
@@ -127,7 +128,7 @@
         font-size: 25px;
     }
 
-    .benefits {
+    #benefits {
         flex-direction: column;
         width: 100%;
     }
