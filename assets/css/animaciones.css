@@ -36,10 +36,11 @@ html {
     display: none;
 }
 
-#menu-toggle:checked ~ .overlay {
+#menu-toggle:checked ~ .overlay,
+#cart-toggle:checked ~ .overlay,
+#user-toggle:checked ~ .overlay {
     display: block;
 }
-
 /* Hover de los elementos "a" del navbar */
 
 .navbar-list li {
