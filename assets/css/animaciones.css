@@ -135,7 +135,8 @@ html {
 
 
 /* Buttons */
-.btn:hover {
+.btn:hover,
+.btn-circle:hover {
   transition: all .3s ease-in-out;
 }
 
@@ -206,17 +207,6 @@ html {
   transform: scaleX(1);
 }
 
-#cart .btn-buy:hover {
-  border-radius: 100px;
-  border: none;
-  padding: 5px 10px;
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  background-color: var(--blue);
-  color: var(--white);
-  transition: all .2s ease-in-out;
-}
 
 /* Hero */
 #hero {
@@ -231,21 +221,24 @@ html {
   animation: slideLeft 1s;
 }
 
-.product-img:hover{
-  transform: scale(1);
+/* Products */
+
+.category:hover {
+  cursor: pointer;
+  background-color: var(--orange);
 }
 
-.product-img:hover > p{
-  display: block;
-  animation: fade .3s, slideDown .5s;
+.product-img:hover .product-ingredients {
+  display: flex;
+  animation: slideDown .5s ease-in;
 }
 
-.categories-category {
-  overflow: hidden;
-}
 
-.categories-category:hover > img {
-  transform: scale(1.2);
-  transition: all .5s ease-in-out;
+.disabled,
+.disabled:hover {
+  background-color: var(--white);
+  color: var(--yellow);
+  cursor: not-allowed;
+  border: none;
 }
 
