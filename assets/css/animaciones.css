@@ -166,12 +166,11 @@ html {
   display: none;
 }
 
-/* SOY RODRI DEL PASADO MARCANDO EL OPEN-MENU */
-
 .show-overlay {
   display: block;
 }
 
+/* Header */
 .icons:hover {
   color: var(--pink);
   transition: all .3s ease;
@@ -181,8 +180,6 @@ html {
   transition: all 0.1s ease;
   color: var(--pink);
 }
-
-/* Hover de los elementos "a" del navbar */
 
 .navbar-list .item {
   position: relative;
@@ -205,6 +202,11 @@ html {
 .navbar-list .link:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
+}
+
+.logo-crocken:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
 }
 
 
@@ -233,7 +235,10 @@ html {
   animation: slideDown .5s ease-in;
 }
 
-
+.product {
+  animation: fade .8s ease-in-out;
+}
+/* Cart */
 .disabled,
 .disabled:hover {
   background-color: var(--white);
@@ -241,4 +246,6 @@ html {
   cursor: not-allowed;
   border: none;
 }
+
+
 

@@ -51,7 +51,7 @@ const animationBoxes = new IntersectionObserver((entries) => {
 
 
 // Scroll
-const scroll = () => {
+const scroll = () => {        
     let scrollPos = window.scrollY
     if (scrollPos > 39) {
         
@@ -78,7 +78,7 @@ const createProductTemplate = (product) => {
             <div class="product-info">
                 <div class="product-title">
                     <span class="new">¡${title}!</span>
-                    <h3 class="title">${name}</h3>
+                    <span class="title">${name}</span>
                 </div>
                 <div class="product-description">
                     <span class="product-price">$${price}</span>
@@ -171,19 +171,22 @@ const renderFilteredProducts = () => {
 
 // Aplicar filtros
 const applyFilter = ({target}) => {
+    var button = target.closest("button")
     // Chequear que sea boton y no esté activo
-    if (!isInactiveFilterBtn(target)) {
+    if (!isInactiveFilterBtn(button)) {
         return
     }
     // Cambiar el estdo del filtro
-    changeFilterState(target)
+    changeFilterState(button)
 
     // Si hay filtro activo, renderizo productos
     productsContainer.innerHTML = ''
     if (appState.activeFilter) {
         renderFilteredProducts()
+        productModal = document.querySelectorAll(".product-modal")
         return
     }
+    
 }
 
 // CARRITO
@@ -251,9 +254,7 @@ const addUnitToProduct = (product) => {
 }   
 
 const showSuccessModal = (msg, id) => {
-    console.log(productModal)
     productModal.forEach((product) => {
-        console.log(product.dataset.id)
         if (product.dataset.id === id) {
             product.classList.add("active-modal")
             product.textContent = msg
@@ -389,6 +390,7 @@ const init = () => {
     window.addEventListener('resize', verificarTamañoPantalla);
     // Scroll
     window.addEventListener('scroll', scroll);
+    
     // Click
     iconCart.addEventListener('click', toggleCart)
     iconMenu.addEventListener('click', toggleMenu)
@@ -406,7 +408,6 @@ const init = () => {
     disableButton(buyBtn)
     renderCartCount()
     productModal = document.querySelectorAll(".product-modal")
-    console.log(productModal)
 }
 
 init()

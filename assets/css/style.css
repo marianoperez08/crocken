@@ -1,18 +1,28 @@
 :root {
-    --red: #eb2c0b;
-    --white: #fafafa;
-    --pink: #f9c6c0;
-    --blue: #0a2e4a;
-    --blue-dark: #001529;
-    --yellow: #ff9e18;
-    --green: #00cf45;
-    --yellow-2: #ff461300;
+    /* Primary Color */
     --orange: #ff4713;
+    --blue-dark: #001529;
+    /* Second Color */
+    --blue: #0a2e4a;
+    --red: #eb2c0b;
+    --yellow: #ff9e18;
+    --pink: #f9c6c0;
+    /* Gray Scale */
+    --black: #141414;
+    --black-light: #444444;
+    --gray: #686868;
+    --gray-light: #9b9b9b;
+    --white-dark: #cecece;
+    --white: #fafafa;
+    /* Modals */
+    --green: #00cf45;
+    
     --box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0);
     --text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 /* OBVIOUSLY FONT */
+/* Normal */
 @font-face {
     font-family: 'Obviously';
     src: url(../../assets/fonts/Obviously/Obviously-Thin.ttf);
@@ -61,6 +71,7 @@
     font-weight: 800;
     font-style: normal;
 }
+/* Narrow */
 @font-face {
     font-family: 'Obviously-Narrow';
     src: url(../../assets/fonts/Obviously-Narrow/Obviously-Narrow-Semibold.ttf);
@@ -112,7 +123,7 @@
 .title-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 h1 {
@@ -120,6 +131,8 @@ h1 {
     font-size: 50px;
     line-height: 50px;
     font-family: 'Obviously';
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
@@ -132,25 +145,42 @@ h2 {
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    font-family: 'Obviously-Narrow';
-    color: var(--white);
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Obviously';
+    text-align: center;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Obviously';
+    text-align: center;
 }
 
 h5 {
-    font-weight: 700;
-    line-height: 18px;
+    font-weight: 800;
+    line-height: 25px;
     font-family: 'Obviously';
-    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
 }
 
 h6 {
-    font-weight: 700;
-    line-height: 16px;
+    font-weight: 800;
+    line-height: 20px;
     font-family: 'Obviously';
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Paragraph */
+p {
+    font-weight: 200;
     font-size: 16px;
+    text-align: center;
 }
 
 /* Buttons */
@@ -198,11 +228,7 @@ i.btn-circle {
 }
 
 
-p {
-    font-weight: 200;
-    font-size: 16px;
-    text-align: center;
-}
+
 
 i.icon-menu {
     display: none;
@@ -263,8 +289,14 @@ header {
 }
 
 .logo-crocken {
-    height: 50%;
+    height: 100%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-crocken img {
+    height: 50%;
 }
 
 .navbar-list {
@@ -561,8 +593,9 @@ main section {
     gap: 30px;
 }
 
-.hero-title{
+.hero-title {
     color: var(--white);
+    text-align: start;
 }
 
 .hero-info span{
@@ -634,18 +667,22 @@ main section {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
 }
 
 .category {
-    color: var(--white);
+    display: flex;
     align-items: center;
+    color: var(--white);
+    justify-content: start;
+    min-width: auto;
     font-size: 14px;
     font-weight: 300;
     background-color: var(--blue);
     border: none;
+    gap: 8px;
+    height: 40px;
+    padding: 0 10px 0 5px; 
     border-radius: 20px;
-    padding: 6px 12px;
     transition: all .3s ease-in-out;
 }
 
@@ -653,9 +690,18 @@ main section {
     background-color: var(--orange);
 }
 
-.category img {
+.category-img {
     color: var(--orange);
     height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.category-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -700,7 +746,7 @@ main section {
     position: relative;
 }
 
-.product-img img{
+.product-img img {
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -741,8 +787,6 @@ main section {
     display: none;
 }
 
-
-
 .product-info {
     display: flex;
     flex-direction: column;
@@ -772,6 +816,8 @@ main section {
     font-size: 20px;
     line-height: 20px;
     color: var(--blue-dark);
+    font-family: 'Obviously-Narrow';
+    font-weight: 700;
 }
 
 .product-title p{
@@ -826,18 +872,19 @@ main section {
 .hours .item {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: start;
+    gap: 15px;
 }
 
-.item h3 {
-    color: var(--blue-dark);
-}
 
-.item p {
+.item div {
+    display: flex;
+    flex-direction: column;
     font-weight: 300;
     text-align: start;
+    align-items: baseline;
 }
+
 
 .map {
     background-color: var(--blue-dark);

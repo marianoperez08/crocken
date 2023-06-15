@@ -167,7 +167,7 @@ const products = [
     {
         id: 16,
         type: "combo-1",
-        name: "Pop´s Crocken", 
+        name: "Combo de Pechugas Crocken Individual", 
         description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
         price: 2649,
         img: "combo-pechugas-crocken.webp",
@@ -175,6 +175,226 @@ const products = [
         title: "nuevo",
         stars: 4.5
     },
+    {
+        id: 17,
+        type: "combo-2",
+        name: "Combo Crocken Duo", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "combo-crocken-duo.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 18,
+        type: "combo-2",
+        name: "Combo Crocken Senior Duo", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "combo-crocken-senior-duo.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 19,
+        type: "combo-2",
+        name: "Combo de 10 Alitas Crunch", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "combo-10alitas-crunch.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 20,
+        type: "combo-2",
+        name: "Pop´s Crocken para Compartir", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "pops-crocken-p-compartir.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 21,
+        type: "combo-2",
+        name: "Combo de Pechugas Crocken para Compartir", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "combo-pechugas-crocken-p-compartir.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 22,
+        type: "picadas",
+        name: "Picada Crocken para 2 Personas (Pican 3)", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "picada-crocken.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 23,
+        type: "picadas",
+        name: "Picada Planeta  Crocken para 4 Personas", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "picada-planeta-crocken-4-personas.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 24,
+        type: "ensaladas",
+        name: "Ensalada Coleslaw", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "ensalada-coleslaw.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 25,
+        type: "ensaladas",
+        name: "Ensalada Waldorf", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "ensalada-waldorf.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 26,
+        type: "ensaladas",
+        name: "Ensalada Caesar", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "ensalada-caesar.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 27,
+        type: "wraps",
+        name: "Veggie Wrap", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "veggie-wrap.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 28,
+        type: "wraps",
+        name: "Crocken Wrap", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "crocken-wrap.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 29,
+        type: "wraps",
+        name: "Crunchy Wrap", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "crunchy-wrap.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 30,
+        type: "acompañamientos",
+        name: "Papas Fritas Calidad Premium", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "papas-fritas.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 31,
+        type: "acompañamientos",
+        name: "Chips de Vegetales", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "chips-vegetales.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 32,
+        type: "acompañamientos",
+        name: "Papas fritas con Parmesano", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "papas-fritas-parmesano.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 33,
+        type: "acompañamientos",
+        name: "Papas fritas con Cheddar", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "papas-fritas-cheddar.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 34,
+        type: "acompañamientos",
+        name: "Papas fritas con Salsa Barbacoa", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "papas-fritas-barbacoa.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 35,
+        type: "bebidas",
+        name: "Lata de Mirinda 354 Cc.", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "mirinda.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    },
+    {
+        id: 36,
+        type: "bebidas",
+        name: "Lata de Pepsi 354 Cc.", 
+        description: "Pan de papa, mayonesa Crocken verde, rúcula, tomate, coleslaw, cebolla morada encurtida y queso tybo.",
+        price: 2649,
+        img: "pepsi.jpg",
+        cantidad: 1,
+        title: "nuevo",
+        stars: 4.5
+    }
 ]
 
 const appState = {

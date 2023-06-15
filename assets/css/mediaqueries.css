@@ -38,6 +38,10 @@
         align-items: center;
     }
 
+    .item div {
+        align-items: center;
+    }
+
     .map {
         width: 100%;
     }
@@ -75,6 +79,31 @@
     h1 {
         font-size: 40px;
         line-height: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    h4 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 18px;
     }
 
     /* Cart */
@@ -206,8 +235,24 @@
     }
 
     /* Seccion Productos */
+    #products {
+        gap: 25px;
+    }
+
     #products h2 {
         text-align: center;
+    }
+
+    .categories {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    /* Ocultar la barra de desplazamiento */
+    .categories::-webkit-scrollbar {
+        display: none;
     }
 
     .product {
